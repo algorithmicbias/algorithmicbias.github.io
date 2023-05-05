@@ -56,7 +56,7 @@ $(document).ready(function(){
   });
 
   $(document).on('keydown', function(event) {
-    if (event.keyCode == 40 || event.keyCode == 39) { // down or right arrow key
+    if (event.keyCode == 40 || event.keyCode == 39 || event.keyCode == 32) { // down or right arrow key
       if (!sliding) {
         sliding = true;
         var currentSlide = $('.carousel-item.active');
