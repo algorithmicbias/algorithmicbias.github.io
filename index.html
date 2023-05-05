@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Algorithmic Bias</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- TODO: Put Title--> 
+    <h1></h1>
+    <div id="myCarousel" class="carousel slide" data-interval="2000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3><b>Who</b> is Responsible for Algorithmic Bias? </h3>
+                <p class="hidden-text">And what can we do about it?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>What is an algorithm?</h3>
+                <hr class = "line" data-delay="1000">
+                <p>An <b>algorithm</b> is a series of steps used to solve a computational problem.</p>
+                <p class="hidden-text"><b>Algorithmic bias</b> is a series of systematic and repeatable errors in a computer system which generate unfair outcomes such as privileging one group over another, highlighting certain results, etc. 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3><b>Where</b> do we see algorithmic bias?</h3>
+                <hr class = "line">
+                <p>As processes become increasingly more automated, jobs that were once done by humans are now done by computers. Because of this, we see algorithmic bias cropping up more and more. When humans did these jobs, they were often governed not just by processes of fairness and transparency, but also by federal, state, and local laws.</p>
+                <p class="hidden-text">Let’s look at some examples of algorithmic bias in practice. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <p>In 2014, Amazon implemented an algorithm that would screen resumes for its engineering roles. Over time, the algorithm learned that Amazon hires far more men than women for its engineering roles and began to favor men’s resumes over women’s resumes. </p>
+                <p>The algorithm mistakenly assumed that Amazon hired more men than women because men were better candidates for the engineering jobs, rather than, because there are fewer women in engineering, overall, and therefore fewer women hired to engineering roles. The algorithm went so far as to downgrade resumes that contained the word “women’s” and blacklist candidates out of women’s colleges, before it was ultimately decommissioned. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <p>In 2020, as the world began to lock down due to the COVID-19 pandemic, the number of users on video conferencing platforms like Zoom skyrocketed. Zoom users very quickly noticed issues in its facial recognition algorithms which were used to generate virtual backgrounds while keeping the user’s face visible. The algorithm, when in use, would remove the heads of Black users, thinking that their faces were part of the background. The same was not the case for users of other skin tones. </p>
+                <p>A similar issue was also seen in Twitter’s automated cropping algorithm. In 2020, users noticed that Twitter’s cropping algorithm was removing Black faces from its image previews in Tweets. In response, Twitter conducted a study on this “cropping bias” and found that, between men and women there was an 8% demographic parity in favor of women, between Black and White individuals, there was a 4% demographic parity in favor of White individuals. Between Black and White women, there was a 7% demographic parity in favor of White women, and between Black and White men, there was a 2% demographic parity in favor of white men. As a result, Twitter changed its cropping algorithm to display standard aspect ratio images in full, i.e. without cropping. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3><b>Why</b> does algorithmic bias exist?</h3>
+                <hr class = "line">
+                <p>Computers, themselves, are not smart. </p>
+                <p>Machines are built by people with bias, trained on data collected by humans with bias, and often tested with humans with bias. Because of this, algorithms risk replicating and amplifying human biases.</p>
+                <p class="hidden-text">But what <b>specifically</b> causes algorithmic bias to occur? </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>Data set was bad or not comprehensive. </h3>
+                <hr class = "line">
+                <p>In 2015, users of Google Photos discovered that the automated tagging function of the application was labeling Black people as gorillas. This feature was implemented as a way of being able to search through photos more easily, identifying specific faces, objects, etc. When this was discovered, Google immediately put in a bug fix that removed the gorilla label entirely such that nothing within the photo library could be labeled “gorilla” and stated that they would be working on “longer-term fixes.” </p>
+                <p class="hidden-text">As of 2018, Google Photos still could not identify any gorilla images. Wired Magazine tested 40,000 images of animals in Google Photos and the application could identify many animals including pandas and poodles, but returned “no results” for search terms “gorilla”, “chimp”, “chimpanzee”, or “monkey”. The application could, however, identify “baboon”, “gibbon”, “marmoset”, and “orangutan”.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>Algorithm wasn’t flexible enough.</h3>
+                <hr class = "line">
+                <p>In 2018, Nijeer Parks was falsely accused of shoplifting and arrested based on facial recognition software used by local police departments. This is not an isolated case, more and more, facial recognition is being used by law enforcement, courts, and other entities to identify crime suspects and make arrests.</p>
+                <p>Facial recognition software is used by law enforcement around the world in order to identify potential suspects based on security camera footage and pictures. A study by Georgetown Law’s Center on Privacy and Technology found that over 117 million American adults (nearly 1 in 2) are in facial recognition networks used by police departments.</p>
+                <p>The databases used to populate these systems mainly come from drivers license photos and mugshot data. Historically, the data used to investigate crimes was mainly made up of fingerprint and DNA data, which could only be obtained through previous criminal arrests or investigations. Now, these databases are primarily made up of law-abiding citizens.</p>
+                <p class = "hidden-text">This has many consequences. </p>
+                <p class = "hidden-text-2">Black Americans are more likely to be singled out, especially when mug shot data is used. The overrepresentation of Black faces in mug shot data means that Black faces are consequently more likely to be falsely matched and have more opportunity to be falsely matched, producing biased results. </p>
+                <p class = "hidden-text-2">Facial recognition tends to perform more poorly on darker faces generally. The research on this subject is limited, however, there could be a few factors at play. First, the dataset may not be diverse enough. Second, it could be that darker skin has less contrast and generally machine learning models are looking for very minute patterns. Third, security camera footage tends to be top down and drivers license photographs vary state by state which can cause discrepancies in results even when a person is present in the database. </p>
+                <p class = "hidden-text-2">In general, people have dopplegangers, people who look vaguely like them, and inevitably, looking at a billion people, statistically, there will be people who look very similar even if they are not related. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>The team didn’t think through all the use cases. </h3>
+                <hr class = "line">
+                <p>In 2019, researchers found that a health care risk-prediction algorithm used by hospitals across the United States (on more than 200 million patients) was giving racially biased results. The algorithm was used to help hospitals and insurance companies direct resources to patients that would benefit from “high-risk care management,” such as specialized nursing, extra primary-care visits, etc. in order to preempt more serious medical care and hospitalization, thereby reducing cost. </p>
+                <p class="hidden-text">The algorithm was found to use healthcare spending as a proxy for medical need, resulting in Black patients receiving lower risk scores than their corresponding White counterparts, while not accounting for the implicit racial bias in the healthcare system, which causes Black patients to have more distrust in the healthcare system overall, thereby making them less likely to request extra care and less likely to spend money on healthcare. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>Humans interacted with an algorithm enough to manipulate it. </h3>
+                <hr class = "line">
+                <p>In 2016, Microsoft released their artificial intelligence chatbot Tay onto Twitter. Tay was designed to mimic the language patterns of a 19 year old girl and learn through interacting with Twitter users. When it was released on March 23, 2016, Tay began replying to Twitter users and captioning photos to be memes. </p>
+                <p>Twitter users quickly exploited Tay, tweeting politically incorrect and inflammatory messages to the bot. Tay had been programmed with some topic blacklisting, including the murder of Eric Garner, for which the bot would generate default, safe, canned answers. However, the bot, as a result of these tweets, began to tweet racist and sexually-charged messages to other Twitter users. </p>
+                <p class="hidden-text">Tay’s behavior was unexpected but understandable. Tay learned only by mimicking other users and had no concept of inappropriate behavior. The bot was only able to copy the deliberately offensive behavior that it was seeing from users with whom it was interacting. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>Culture issues in technology</h3>
+                <hr class = "line">
+                <p>“Move Fast, Break Things”: this was Facebook’s old slogan. And while the slogan itself is now defunct, it remains a good description of the way much of the technology industry still operates. And it is detrimental to people, and detrimental to technology. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>It's all of the above. </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3><b>Who</b> is responsible for algorithmic bias?</h3>
+                <p class="hidden-text">Is it developers?</p>
+                <p class="hidden-text-2">Is it companies?</p>
+                <p class="hidden-text-3">Is it institutions?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>It's all three.</h3>
+                <p class="hidden-text">Individual developers must do more to push internally, encourage their teams to fully test out their products before release, and encourage data cleanliness practices.</p>
+                <p class="hidden-text-2">Companies have economic incentives to keep their platforms running even when there are known bugs and issues, even at the expense of their users.</p>
+                <p class="hidden-text-3">Institutions must encourage students to understand the ethics and pitfalls of algorithms and bias, as well as institute ethical best practices in developing and maintaining algorithm hygiene.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>What can we do to <b>combat</b> algorithmic bias? </h3>
+                <hr class = "line">
+                <p class = "hidden-text">There are things that all three of these groups (developers, companies, and institutions) are already doing, but we need to do more.</p>
+                <p class = "hidden-text-2">The problem with the current approach is that they are mostly reactionary. It needs to be more proactive.</p>
+                <p class = "hidden-text-2">When problems occur, we tend to put “band-aids” on problems until algorithms can be changed, if they can be changed at all. Truly though, these problems should not have occurred at all, and are preventable. Many times, band-aids are never fixed and become permanent, but incomplete solutions to a problem.</p>
+                <p class = "hidden-text-3">We know how to circumvent this approach, because we're already doing it in cybersecurity. In cybersecurity, experts are hired to purposefully break into systems and find gaps in security. The same can be applied to the problem of algorithmic bias.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>What can <b>individuals</b> do to combat algorithmic bias?</h3>
+                <hr class = "line">
+                <p>The most important thing that an individual can do is to change the way that they think about algorithms and technology. We, as humans, have a tendency to hold technology up as morally superior and think that it stands above human bias. But the truth is, the technology that we have cannot exist without data that is produced through exclusion, bias, and inequity. </p>
+                <p class="hidden-text">The tendency to lift technology, innovation, and technology CEOs and to think that “they can do no wrong,” or that “they work faster, and therefore, better than humans,” is inherently flawed. And always wanting the newest, shiniest thing, the newest technology, and wanting it fast, perpetuates the neverending fast-paced cycle, and the idea that technology is better than humans, and not fallible contributes to more algorithmic bias and more issues in technology, overall. </p>
+                <p class="hidden-text-2">Individuals should report problems when they see them. </p>
+                <p class="hidden-text-3">This is an incomplete solution, because these systems are often audited by real people. Content moderators at social media platforms like Tik Tok and Facebook have talked about the explicit, violating, and sometimes violent behavior they’ve had to screen on their platforms, even going so far as to sue these companies for the mental strain and post traumatic stress care caused. </p>
+                <p class="hidden-text-3">Moreover, these decisions are left to personal assessment by content moderators. Do we want these individuals to be our moral compass? And how do we fix this problem on a global scale? Especially when the content is not in English. </p>
+                <p class="hidden-text-3">We need assurances that once something is reported and removed, it cannot be put up again. </p>
+                <p class="hidden-text-4">Luckily, there are some companies working on solutions to this problem. Twitch, a global streaming platform, bans IP addresses rather than user ids making it more difficult for problematic users to rejoin the platform. </p>
+                <p class="hidden-text-5">Still, there are benefits to reporting problems on technology platforms when you see them. The primary of which is that it holds tech companies accountable to their users. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>What can <b>technologists</b> do to combat algorithmic bias?</h3>
+                <hr class = "line">
+                <p>Developers must learn to incorporate bias mitigation and detection techniques at every stage of the software development lifecycle, from analysis and planning to development to testing and maintenance. </p>
+                <p class="hidden-text">Development teams can institute bias testing as part of their regular quality assurance and maintenance plans, as well as include regular data quality checks throughout the development process. It is important to remember that more data does not necessarily mean good data. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>What can <b>companies</b> do to combat algorithmic bias?</h3>
+                <hr class = "line">
+                <p>Institutions and third parties can <b>audit</b> algorithms. </p>
+                <p>Auditing algorithms is crucial in mitigating algorithmic bias, and in reducing pressure on content moderators. Many, if not most, machine learning algorithms, which rely on big data, are black-boxes. However, there are many institutions, corporate, academic, and non-profit that are looking at frameworks that can audit algorithms and provide insight into an algorithm’s behavior, even without technical expertise. </p>
+                <p class="hidden-text">The AI Now Institute at New York University has introduced a framework that governmental institutions can use to create Algorithmic Impact Statements (AIAs) which are able to evaluate the potential detrimental impact of an algorithm. This is not a new concept and has been created in the same vein as environmental, privacy, data, and human rights impact statements. Algorithms, by nature, are premeditated. And formal and regular auditing is not only the best practice for mitigating algorithmic bias, but in the best interests of both users and corporate institutions. </p>
+                <p class="hidden-text-2">Corporations can take steps without formal audits too. There are easy processes that can be incorporated into the regular testing step of the software development life cycle. For example, teams can compare outcomes for different groups in order to check for anomalous results. Or create simulations of predictions and compare them to the actual results produced by an algorithm. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>What can <b>governments</b> do to combat algorithmic bias?</h3>
+                <hr class = "line">
+                <p>Before we talk about what governments can do, it's important to understand that there are several regulatory challenges that governments face when thinking about algorithic bias: </p>
+                <ul>
+                  <li class="hidden-text">AI regulation is reactionary and not ubiquitous.</li>
+                  <li class="hidden-text">AI regulations has practical enforcement challenges.</li>
+                  <li class="hidden-text">Gathering evidence for accountability poses risks for remediation.</li>
+                  <li class="hidden-text">There are conflicting business forces and objectives at play.</li>
+                  <li class="hidden-text">There are model development and process challenges.</li>
+                  <li class="hidden-text">Many believe models, algorithms, and technology companies are "too big to audit."</li>
+                  <li class="hidden-text">There are community and organizational challenges.</li>
+                  <li class="hidden-text">Still, there are methods through which we can regulate algorithms. And, the practical challenges make it even more critical to do so. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>What can <b>governments</b> do to combat algorithmic bias?</h3>
+                <hr class = "line">
+                <p>There are several steps governments can take in order to combat algorithmic bias from a regulatory perspective. The first is a change to Section 230. Section 230 is a 1996 law that allows Internet Services companies (including social media companies) to host user-generated content without being legally responsible for libelous speech or illegal content posted by their users. </p>
+                <p class="hidden-text">Experts like Frances Haugen say that reforming Section 230 would make companies like Facebook responsible for their ranking algorithms and discourage engagement-based ranking. A.I. systems are not able to and likely will never be able to identify all instances of illegal content, and making companies responsible for their user’s content would force companies to rethink algorithmic feeds. </p>
+                <p class="hidden-text-2">Governments can also update non-discrimination and civil rights law to apply to digital practices and regularize algorithmic hygiene standards. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>The solution to algorithmic bias in our technology <b>cannot</b> be strictly data driven. </h3>
+                <hr class = "line">
+                <p class="hidden-text">Many groups (including developers, companies, and institutions) have worked to reduce discrimination present in their algorithms and datasets, but this will never solve the problems of human nature, that each of these datasets will always be gathered by and tested with humans with bias. Avoiding bias is not possible without understanding how and why bias appears and that any human monitoring these systems will also have their own inherent biases. </p>
+                <h3 class="hidden-text-2">All of the problems related to algorithmic bias are inextricably linked. </h3>
+                <hr class = "line hidden-text-2">
+                <p class="hidden-text-3">When we stop thinking about technology as infallible and as better than humans, we stop being overtaken by what is shiny and new and we are better able to hold technology companies accountable for the issues present in their technologies. </p>
+                <p class="hidden-text-4">When technology companies move slower and take more time to consider the consequences of their work, when they think more about bias, and confront their own biases internally, and apply these mindful practices to both technologies that already exist, and to new technologies, then we get better algorithms, that do not compromise on fairness and that serve all users in the best way possible. </p>
+                <p class="hidden-text-5">When regulatory bodies force companies to innovate ethically and work to understand the true impact that technology has on demographic groups, they are not stifling innovation. Rather, they are creating innovation, the constraints posed allow for the development of improved, superior technologies which do not jeopardize users or morality. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TODO: Sources --> 
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>Resources </h3>
+                <hr class = "line">
+                <p>Adler, P., Falk, C., Friedler, S., Rybeck, G., Scheidegger, C., Smith, B., & Venkatasubramanian, S. (2016). <a href="https://arxiv.org/abs/1602.07043">Auditing Black-box Models for Indirect Influence</a>.</p>
+                <p>Benjamin, R. (2019). <a href="">Race After Technology.</a></p>
+                <p>Chen, J., Storchan, V. & Kurshan, E. (2021). <a href="https://arxiv.org/pdf/2108.06217.pdf">Beyond Fairness Metricks: Roadblocks and Challenges for Ethical AI in Practice</a>.</p>
+                <p>Dastin, J. (2018). <a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G">Amazon scraps secret AI recruiting tool that showed bias against women</a>.</p>
+                <p>Dickey, M.R. (2017). <a href="https://techcrunch.com/2017/04/30/algorithmic-accountability/">Algorithmic accountability</a>.</p>
+                <p>Dickey, M.R. (2020). <a href="https://techcrunch.com/2020/09/21/twitter-and-zoom-algorithmic-bias-issues/">Twitter and Zoom’s algorithmic bias issues</a>.</p>
+                <p>Eisenstat, Y. (2019). <a href="https://www.wired.com/story/the-real-reason-tech-struggles-with-algorithmic-bias/">The Real Reason Tech Struggles With Algorithmic Bias</a></p>
+                <p>Feldman, M., Friedler, S., Moeller, J., Scheidegger, C. & Venkatasubramanian, S. (2014). <a href="https://arxiv.org/abs/1412.3756">Certifying and removing disparate impact</a>.</p>
+                <p>Friedler, S., Scheidegger, C., & Venkatasubramanian, S. (2016). <a href="https://arxiv.org/abs/1609.07236">On the (im)possibility of fairness</a>.</p>
+                <p>Georgtown Law Center on Privacy and Technology. (2016). <a href="https://www.perpetuallineup.org/">The Perpetual Line-Up: Unregulated Police Face Recognition in America</a>.</p>
+                <p>Heilweil, R. (2020). <a href="https://www.vox.com/recode/2020/2/18/21121286/algorithms-bias-discrimination-facial-recognition-transparency">Why algorithms can be racist and sexist</a>.</p>
+                <p>Hill, K. (2020). <a href="https://www.nytimes.com/2020/06/24/technology/facial-recognition-arrest.html">Wrongfully Accused by an Algorithm</a>.</p>
+                <p>Lee, N.T., Resnick, P. & Barton, G. (2019). <a href="https://www.brookings.edu/research/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/">Algorithmic bias detection and mitigation: Best practices and policies to reduce consumer harms</a>.</p>
+                <p>Lindsay, R. (2021). <a href="https://www.nytimes.com/2021/10/06/opinion/facebook-whistleblower-section-230.html">I Designed Algorithms at Facebook. Here’s How to Regulate Them</a>.</p>
+                <p>Noble, S. (2018). <a href="">Algorithms of Oppression: How Search Engines Reinforce Racism.</a></p>
+                <p>O'Neil, C. (2016). <a href="">Weapons of Math Destruction.</a></p>
+                <p>Pepitone, J. (2015). <a href="https://www.nbcnews.com/tech/innovation/computer-programs-can-be-biased-humans-n411046">Can Resume-Reviewing Software Be As Biased As Human Hiring Managers?</a>.</p>
+                <p>Roberts, L.M. & McCluney C.L. (2020). <a href="https://hbr.org/2020/06/working-from-home-while-black">Working from Home While Black.</a></p>
+                <p>Simonite, T. (2018). <a href="https://www.wired.com/story/when-it-comes-to-gorillas-google-photos-remains-blind/">When It Comes to Gorillas, Google Photos Remains Blind</a>.</p>
+                <p>Smith-Strickland, K. (2015). <a href="https://gizmodo.com/computer-programs-can-be-as-biased-as-humans-1724436758">Computer Programs Can Be as Biased as Humans</a>.</p>
+                <p>Twitter. (2021). <a href="https://blog.twitter.com/engineering/en_us/topics/insights/2021/sharing-learnings-about-our-image-cropping-algorithm">Sharing learnings about our image cropping algorithm</a>.</p>                <p>Vartan, S. (2019). <a href="https://www.scientificamerican.com/article/racial-bias-found-in-a-major-health-care-risk-algorithm/">Racial Bias Found in a Major Health Care Risk Algorithm</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TODO: About the author --> 
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>Who's Responsible for Algorithmic Bias</h3>
+                <p>was a two-year research project with the Diversity in Data Graduate Specialist Program at Rutgers University. This project was originally presented as a series of talks and interactive workshops at the university during the 2021-2022 academic school year. Recordings of these workshops can be found <a href="https://libguides.rutgers.edu/c.php?g=1221231&p=8942572">here</a>. The project was overseen by Ryan Womack.</p>
+                <hr class = "line">
+                <p>This project was developed by Katherine Lee. Katherine Lee has a Masters in Computer Science, in Artificial Intelligence and Machine Learning from Rutgers University and a Bachelors in Computer Science from Bryn Mawr College. Her research interests are primarily focused around ethics issues in technology and human-computer interaction, particularly algorithmic bias and fairness, data privacy, accountability in technology, accessible technology, and the role that developers play in building out a safer, more ethical future. She can be reached at <a href="mailto: katherine.s.lee@rutgers.edu">here</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  background-color: #020202;
+  color: #E5E7E6;
+}
+
+h3 b {
+  color: #D62839;
+}
+
+a {
+  color: #D62839;
+}
+
+
+/* Optional custom styles */
+.carousel-caption {
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  color: #E5E7E6;
+}
+
+.carousel-item {
+  transform: translate3d(0, 100%, 0);
+  display: flex !important;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-item.active {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.scroll-text {
+  display: none;
+}
+
+.hidden-text {
+  display: none;
+}
+
+.hidden-text-2 {
+  display: none;
+}
+
+.hidden-text-3 {
+  display: none;
+}
+
+.hidden-text-4 {
+  display: none;
+}
+
+.hidden-text-5 {
+  display: none;
+}
+
+.line {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* set the initial width and background color of the line */
+  width: 0;
+  height: 1px;
+  background-color: #E5E7E6;  
+}
+
+.line-draw {
+  animation-name: draw-line;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes draw-line {
+  0% {
+    width: 0;
+    /* set the starting point of the line */
+    transform-origin: top;
+  }
+  100% {
+    width: 100%;
+    /* set the ending point of the line */
+    transform-origin: top;
+  }
+}
