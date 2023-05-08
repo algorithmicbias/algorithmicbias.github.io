@@ -86,3 +86,19 @@ a {
     transform-origin: top;
   }
 }
+
+.about {
+  position: fixed;
+  text-align: center;
+  bottom: 0px;
+  /* color: #617073; */
+  padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 16.5px;
+  }
+  body {
+    padding: 15px;
+  }

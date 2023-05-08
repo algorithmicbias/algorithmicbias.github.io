@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5E6LG6YKG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-C5E6LG6YKG');
+  </script>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name = "description" content="Mitigating algorithmic bias begins with understanding the problem, how and why it occurs, and what solutions we have at our disposal.">
+
   <title>Algorithmic Bias</title>
   <!-- Link to Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -21,6 +33,7 @@
               <div class="carousel-content">
                 <h3><b>Who</b> is Responsible for Algorithmic Bias? </h3>
                 <p class="hidden-text">And what can we do about it?</p>
+                <p class="hidden-text-2 about"><b>Who's Responsible for Algorithmic Bias</b> was developed by Katherine Lee for the <a href="https://libguides.rutgers.edu/graduatespecialist">Diversity in Data Graduate Specialist Program</a> at Rutgers University.</p>
               </div>
             </div>
           </div>
@@ -104,9 +117,19 @@
                 <p>Facial recognition software is used by law enforcement around the world in order to identify potential suspects based on security camera footage and pictures. A study by Georgetown Law’s Center on Privacy and Technology found that over 117 million American adults (nearly 1 in 2) are in facial recognition networks used by police departments.</p>
                 <p>The databases used to populate these systems mainly come from drivers license photos and mugshot data. Historically, the data used to investigate crimes was mainly made up of fingerprint and DNA data, which could only be obtained through previous criminal arrests or investigations. Now, these databases are primarily made up of law-abiding citizens.</p>
                 <p class = "hidden-text">This has many consequences. </p>
-                <p class = "hidden-text-2">Black Americans are more likely to be singled out, especially when mug shot data is used. The overrepresentation of Black faces in mug shot data means that Black faces are consequently more likely to be falsely matched and have more opportunity to be falsely matched, producing biased results. </p>
-                <p class = "hidden-text-2">Facial recognition tends to perform more poorly on darker faces generally. The research on this subject is limited, however, there could be a few factors at play. First, the dataset may not be diverse enough. Second, it could be that darker skin has less contrast and generally machine learning models are looking for very minute patterns. Third, security camera footage tends to be top down and drivers license photographs vary state by state which can cause discrepancies in results even when a person is present in the database. </p>
-                <p class = "hidden-text-2">In general, people have dopplegangers, people who look vaguely like them, and inevitably, looking at a billion people, statistically, there will be people who look very similar even if they are not related. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="carousel-content">
+                <h3>Algorithm wasn’t flexible enough. (Cont.)</h3>
+                <hr class = "line">
+                <p>Black Americans are more likely to be singled out, especially when mug shot data is used. The overrepresentation of Black faces in mug shot data means that Black faces are consequently more likely to be falsely matched and have more opportunity to be falsely matched, producing biased results. </p>
+                <p>Facial recognition tends to perform more poorly on darker faces generally. The research on this subject is limited, however, there could be a few factors at play. First, the dataset may not be diverse enough. Second, it could be that darker skin has less contrast and generally machine learning models are looking for very minute patterns. Third, security camera footage tends to be top down and drivers license photographs vary state by state which can cause discrepancies in results even when a person is present in the database. </p>
+                <p>In general, people have dopplegangers, people who look vaguely like them, and inevitably, looking at a billion people, statistically, there will be people who look very similar even if they are not related. </p>
               </div>
             </div>
           </div>
@@ -336,14 +359,6 @@
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
   </div>
 

@@ -93,6 +93,17 @@ $(document).ready(function(){
           sliding = false;
         }, 500); // Delay to prevent multiple events within 500ms
       }
+    } else if (event.keyCode == 48) {
+      // "0" key as shortcut to end of carousel
+      event.preventDefault(); 
+      var carousel = $('#myCarousel');
+      var numSlides = $('.carousel-item', carousel).length;
+      carousel.carousel(numSlides -1);
+    } else if (event.keyCode == 49) {
+      // "1" key to jump to first slide
+      event.preventDefault(); 
+      var carousel = $('#myCarousel');
+      carousel.carousel(0);
     }
 
   });
