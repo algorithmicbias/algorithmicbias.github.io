@@ -97,7 +97,7 @@ a {
 
 @media only screen and (max-width: 767px) {
   p {
-    font-size: 16.5px;
+    font-size: 12px;
   }
   body {
     padding: 15px;
