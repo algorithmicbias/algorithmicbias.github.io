@@ -56,31 +56,43 @@ $(document).ready(function(){
   });
 
   $(document).on('click', function(event) {
-    if (!sliding) {
-      sliding = true;
-      var currentSlide = $('.carousel-item.active');
-      var hiddenText = currentSlide.find('.hidden-text');
-      var hiddenText2 = currentSlide.find('.hidden-text-2');
-      var hiddenText3 = currentSlide.find('.hidden-text-3');
-      var hiddenText4 = currentSlide.find('.hidden-text-4');
-      var hiddenText5 = currentSlide.find('.hidden-text-5');
-      if (hiddenText.length > 0 && !hiddenText.is(':visible')) {
-        $('.carousel-item.active').find('.hidden-text').slideDown('slow');
-      } else if (hiddenText2.length > 0 && !hiddenText2.is(':visible')){
-        $('.carousel-item.active').find('.hidden-text-2').slideDown('slow');
-      } else if (hiddenText3.length > 0 && !hiddenText3.is(':visible')){
-        $('.carousel-item.active').find('.hidden-text-3').slideDown('slow');
-      } else if (hiddenText4.length > 0 && !hiddenText4.is(':visible')){
-        $('.carousel-item.active').find('.hidden-text-4').slideDown('slow');
-      } else if (hiddenText5.length > 0 && !hiddenText5.is(':visible')){
-        $('.carousel-item.active').find('.hidden-text-5').slideDown('slow');
-      } else {
-        $("#myCarousel").carousel("next");
+    var clickX = event.pageX;
+    var windowWidth = $(window).width(); 
+    if (clickX > windowWidth / 2) {
+      if (!sliding) {
+        sliding = true;
+        var currentSlide = $('.carousel-item.active');
+        var hiddenText = currentSlide.find('.hidden-text');
+        var hiddenText2 = currentSlide.find('.hidden-text-2');
+        var hiddenText3 = currentSlide.find('.hidden-text-3');
+        var hiddenText4 = currentSlide.find('.hidden-text-4');
+        var hiddenText5 = currentSlide.find('.hidden-text-5');
+        if (hiddenText.length > 0 && !hiddenText.is(':visible')) {
+          $('.carousel-item.active').find('.hidden-text').slideDown('slow');
+        } else if (hiddenText2.length > 0 && !hiddenText2.is(':visible')){
+          $('.carousel-item.active').find('.hidden-text-2').slideDown('slow');
+        } else if (hiddenText3.length > 0 && !hiddenText3.is(':visible')){
+          $('.carousel-item.active').find('.hidden-text-3').slideDown('slow');
+        } else if (hiddenText4.length > 0 && !hiddenText4.is(':visible')){
+          $('.carousel-item.active').find('.hidden-text-4').slideDown('slow');
+        } else if (hiddenText5.length > 0 && !hiddenText5.is(':visible')){
+          $('.carousel-item.active').find('.hidden-text-5').slideDown('slow');
+        } else {
+          $("#myCarousel").carousel("next");
+        }
+        //$("#myCarousel").carousel("next");
+        setTimeout(function(){
+          sliding = false;
+        }, 500); // Delay to prevent multiple events within 500ms
       }
-      //$("#myCarousel").carousel("next");
-      setTimeout(function(){
-        sliding = false;
-      }, 500); // Delay to prevent multiple events within 500ms
+    } else {
+      if (!sliding) {
+        sliding = true;
+        $("#myCarousel").carousel("prev");
+        setTimeout(function(){
+          sliding = false;
+        }, 500); // Delay to prevent multiple events within 500ms
+      }
     }
   });
 
